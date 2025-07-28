@@ -66,3 +66,5 @@ To clone specific branch
 git clone --branch <branch_name> --single-branch <repo_url>
 ```
 
+<img src="/logo.svg" alt="" />
+- / --> can access public folder directly
