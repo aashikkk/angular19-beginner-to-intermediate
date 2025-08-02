@@ -1,1 +1,30 @@
-<img src="/logo.svg" alt="" />
+<nav class="fixed top-0 w-full z-50">
+  <ul
+    class="flex w-full px-5 py-2 text-emerald-50 justify-between bg-emerald-600 items-center shadow shadow-emerald-800"
+  >
+    <li class="flex gap-3 items-center">
+      <img src="/logo.svg" alt="" />
+      <h1 class="text-2xl font-semibold">My Notes</h1>
+    </li>
+    <li class="flex">Welcome, Aashik</li>
+  </ul>
+</nav>
+
+<section class="flex mt-16">
+  <nav
+    class="w-3xs min-w-3xs flex top-16 sticky h-[calc(100vh-4rem)] bg-emerald-600 text-emerald-50 py-5"
+  >
+    <app-side-bar class="w-full"></app-side-bar>
+  </nav>
+  <main class="p-5">
+    Name:
+    <input
+      class="border border-emerald-200"
+      type="text"
+      [value]="name"
+      (change)="onChange($event)"
+    />
+    <br />
+    {{ name }}
+  </main>
+</section>
