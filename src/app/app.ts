@@ -1,14 +1,14 @@
-import { Component, signal } from "@angular/core";
-import { SideBar } from "../shared/side-bar/side-bar";
+import { Component, Input } from "@angular/core";
+import { SideBar } from "../shared/components/side-bar/side-bar";
 import { FormsModule } from "@angular/forms";
+import { Heading } from "../learning/heading/heading";
 
 @Component({
   selector: "app-root",
-  imports: [SideBar, FormsModule],
+  imports: [SideBar, FormsModule, Heading],
   templateUrl: "./app.html",
   styleUrl: "./app.css",
 })
 export class App {
-  protected readonly title = signal("app");
-  name = "Aashik";
+  heading = "My main heading";
 }
