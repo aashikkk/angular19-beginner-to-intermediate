@@ -18,12 +18,7 @@
   </nav>
   <main class="p-5">
     Name:
-    <input
-      class="border border-emerald-200"
-      type="text"
-      [value]="name"
-      (change)="onChange($event)"
-    />
+    <input class="border border-emerald-200" type="text" [(ngModel)]="name" />
     <br />
     {{ name }}
   </main>
